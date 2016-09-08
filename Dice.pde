@@ -1,10 +1,12 @@
 void setup()
 {
 	noLoop();
+	size(300, 300);
 }
 void draw()
 {
-	//your code here
+	background(0);
+	int die
 }
 void mousePressed()
 {
@@ -19,10 +21,11 @@ class Die //models one single dice cube
 	}
 	void roll()
 	{
-		//your code here
+		
 	}
 	void show()
 	{
-		//your code here
+		rect(150, 150, 150, 150);
+		ellipse(150, 150, 10, 10);
 	}
 }
