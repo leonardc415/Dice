@@ -1,31 +1,45 @@
 void setup()
 {
-	noLoop();
 	size(300, 300);
+	noLoop();
 }
 void draw()
 {
-	background(0);
-	int die
+	Die dice = new Die(125, 125);
+	dice.show();
 }
+
 void mousePressed()
 {
 	redraw();
 }
-class Die //models one single dice cube
+
+class Die 
 {
-	//variable declarations here
-	Die(int x, int y) //constructor
+	int myX, myY, dieNum;
+	Die(int x, int y) 
 	{
-		//variable initializations here
+		myX = x;
+		myY = y;
+		roll();
 	}
 	void roll()
 	{
-		
+		dieNum = Math.random()*1
+		if(dieNum = 1)
+		{
+			die.show();
+		}
+		else {
+			die.show();
+		}
+		//your code here
 	}
 	void show()
 	{
-		rect(150, 150, 150, 150);
-		ellipse(150, 150, 10, 10);
+		rect(myX, myY, 50, 50);
+		fill(0);
+		ellipse(myX+25, myY+25, 10, 10);
+		//your code here
 	}
 }
