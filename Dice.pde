@@ -22,9 +22,9 @@ class Die
 		myX = x;
 		myY = y;
 		dieNum = Math.random()*1
-		roll();
+		//roll();
 	}
-	void roll()
+	/*void roll()
 	{
 		if(dieNum = 1)
 		{
@@ -32,7 +32,7 @@ class Die
 		}
 		else {
 			die.show();
-		}
+		}*/
 		//your code here
 	}
 	void show()
