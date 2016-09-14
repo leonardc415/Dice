@@ -21,11 +21,11 @@ class Die
 	{
 		myX = x;
 		myY = y;
+		dieNum = Math.random()*1
 		roll();
 	}
 	void roll()
 	{
-		dieNum = Math.random()*1
 		if(dieNum = 1)
 		{
 			die.show();
