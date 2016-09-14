@@ -21,25 +21,27 @@ class Die
 	{
 		myX = x;
 		myY = y;
-		dieNum = Math.random()*1
-		//roll();
 	}
-	/*void roll()
+	void roll()
 	{
-		if(dieNum = 1)
-		{
-			die.show();
-		}
-		else {
-			die.show();
-		}*/
-		//your code here
+		dieNum =(int)(Math.random()*1)+1;
 	}
 	void show()
 	{
-		rect(myX, myY, 50, 50);
-		fill(0);
-		ellipse(myX+25, myY+25, 10, 10);
-		//your code here
+		if(dieNum == 1)
+		{	
+			fill(0);
+			rect(myX, myY, 50, 50);
+			ellipse(myX+25, myY+25, 10, 10); 
+		}
+		else if(dieNum == 5)
+		{
+			fill(0);
+			rect(myX, myY, 50, 50);
+			ellipse(myX+16, myY+16, 10, 10); 
+			ellipse(myX+34, myY+35, 10, 10);
+		}
+		
+		
 	}
 }
