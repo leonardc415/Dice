@@ -24,24 +24,46 @@ class Die
 	}
 	void roll()
 	{
-		dieNum =(int)(Math.random()*1)+1;
+		dieNum =(int)(Math.random()*2)+1;
 	}
 	void show()
 	{
 		if(dieNum == 1)
 		{	
-			fill(0);
 			rect(myX, myY, 50, 50);
-			ellipse(myX+25, myY+25, 10, 10); 
+			ellipse(myX+25, myY+25, 10, 10); //1 die
 		}
-		else if(dieNum == 5)
+		else if(dieNum == 2)
 		{
-			fill(0);
 			rect(myX, myY, 50, 50);
+			ellipse(myX+16, myY+16, 10, 10); //2die
+			ellipse(myX+34, myY+35, 10, 10);
+		}
+		else if(dieNum == 3)
+		{
+			rect(myX, myY, 50, 50);
+			ellipse(myX+25, myY+25, 10, 10);//3 die
 			ellipse(myX+16, myY+16, 10, 10); 
 			ellipse(myX+34, myY+35, 10, 10);
 		}
-		
-		
+		else if(dieNum == 4)
+		{
+			rect(myX, myY, 50, 50);
+			fill(0);
+			ellipse(myX+14, myY+14, 10, 10); //4 die
+			ellipse(myX+34, myY+35, 10, 10);
+			ellipse(myX+34, myY+14, 10, 10);
+			ellipse(myX+14, myY+35, 10, 10);
+		}
+		else if (dieNum == 5)
+		{
+			rect(myX, myY, 50, 50);
+			fill(0);
+			ellipse(myX+25, myY+25, 10, 10);//5 die
+			ellipse(myX+14, myY+14, 10, 10); 
+			ellipse(myX+34, myY+35, 10, 10);//some circles changed
+			ellipse(myX+34, myY+14, 10, 10);
+			ellipse(myX+14, myY+35, 10, 10);
+		}
 	}
 }
