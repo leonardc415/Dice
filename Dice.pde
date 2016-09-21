@@ -24,7 +24,7 @@ class Die
 	}
 	void roll()
 	{
-		dieNum =(int)(Math.random()*6)+1;
+		dieNum =(int)(Math.random()*5)+1;
 	}
 	void show()
 	{
@@ -33,20 +33,20 @@ class Die
 			rect(myX, myY, 50, 50);
 			ellipse(myX+25, myY+25, 10, 10); //1 die
 		}
-		else if(dieNum == 2)
+		if(dieNum == 2)
 		{
 			rect(myX, myY, 50, 50);
 			ellipse(myX+16, myY+16, 10, 10); //2die
 			ellipse(myX+34, myY+35, 10, 10);
 		}
-		else if(dieNum == 3)
+		if(dieNum == 3)
 		{
 			rect(myX, myY, 50, 50);
 			ellipse(myX+25, myY+25, 10, 10);//3 die
 			ellipse(myX+16, myY+16, 10, 10); 
 			ellipse(myX+34, myY+35, 10, 10);
 		}
-		else if(dieNum == 4)
+		if(dieNum == 4)
 		{
 			rect(myX, myY, 50, 50);
 			fill(0);
@@ -55,7 +55,7 @@ class Die
 			ellipse(myX+34, myY+14, 10, 10);
 			ellipse(myX+14, myY+35, 10, 10);
 		}
-		else if (dieNum == 5)
+		if(dieNum == 5)
 		{
 			rect(myX, myY, 50, 50);
 			fill(0);
