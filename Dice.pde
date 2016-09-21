@@ -24,7 +24,7 @@ class Die
 	}
 	void roll()
 	{
-		dieNum =(int)(Math.random()*2)+1;
+		dieNum =(int)(Math.random()*6)+1;
 	}
 	void show()
 	{
